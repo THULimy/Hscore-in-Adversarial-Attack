@@ -87,7 +87,7 @@ class aceModel_g(nn.Module):
         self.fc1 = nn.Linear(10, 128)
 
     def forward(self, y):
-        g = F.relu(self.fc1(y))
+        g = self.fc1(y)
         return g
 
 class aceModel(nn.Module):
